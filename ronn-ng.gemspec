@@ -59,11 +59,11 @@ Gem::Specification.new do |s|
   s.executables = ['ronn']
 
   s.extra_rdoc_files = %w[LICENSE.txt AUTHORS]
-  s.add_dependency 'kramdown',                 ['~> 2', '>= 2.1']
+  s.add_dependency 'kramdown',                 ['>= 1.17.0']
   s.add_dependency 'kramdown-parser-gfm',      ['~> 1', '>= 1.0.1']
-  s.add_dependency 'mustache',                 ['~> 1']
+  s.add_dependency 'mustache',                 ['>= 0.7.0']
   # nokogiri <= 1.14.2 mishandle tag names with ":" in them (see #102)
-  s.add_dependency 'nokogiri',                 ['~> 1', '>= 1.14.3']
+  s.add_dependency 'nokogiri',                 ['>= 1.14.3']
   # rack < 2.2.3 have security vulns
   s.add_development_dependency 'rack',         ['~> 2', '>= 2.2.3']
   s.add_development_dependency 'rake',         ['~> 13', '>= 13.0.3']
